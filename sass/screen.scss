@@ -1,0 +1,207 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/reset";
+
+$coolBlue: rgb(42, 186, 227);
+$radius: 6px;
+$hhfeGrey: rgb(224, 224, 224);
+
+html {
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hhfe-box {
+  display: flex;
+  width: 1000px;
+  height: 700px;
+  box-sizing: border-box;
+  border-radius: $radius;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.hhfe-box-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 70px;
+  box-sizing: border-box;
+  background: $coolBlue;
+  border-radius: $radius 0 0 $radius;
+  .avatar {
+    margin: 20px auto;
+    border: 1px solid darken($hhfeGrey, 15%);
+  }
+}
+
+.hhfe-box-sidebar-header {
+  display: flex;
+  margin: 0 auto;
+  width: 65px;
+  justify-content: space-around;
+  align-items: center;
+  height: 25px;
+  div {
+    height: 12px;
+    width: 12px;
+    border: 1px solid darken($hhfeGrey, 25%);
+    border-radius: 50%;
+  }
+  div:nth-child(1) {
+    background-color: rgb(252, 98, 93);
+  }
+  div:nth-child(2) {
+    background-color: rgb(253, 193, 65);
+  }
+  div:nth-child(3) {
+    background-color: rgb(51, 199, 72);
+  }
+}
+
+.hhfe-box-select {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 250px;
+  border-top: 1px solid $hhfeGrey;
+  border-right: 1px solid $hhfeGrey;
+  border-bottom: 1px solid $hhfeGrey;
+  background-color: lighten($hhfeGrey, 10%);
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      box-sizing: border-box;
+      height: 70px;
+      border-bottom: 1px solid $hhfeGrey;
+      .avatar {
+        border: 1px solid darken($hhfeGrey, 5%);
+      }
+      span {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.hhfe-box-select-finder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 70px;
+  border-bottom: 1px solid $hhfeGrey;
+  input {
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin: 0 auto;
+    outline: none;
+    border-radius: $radius;
+    background-color: $hhfeGrey;
+  }
+}
+
+.hhfe-box-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border-top: 1px solid $hhfeGrey;
+  border-right: 1px solid $hhfeGrey;
+  border-bottom: 1px solid $hhfeGrey;
+  border-radius: 0 $radius $radius 0;
+  background-color: lighten($hhfeGrey, 15%);
+}
+
+.hhfe-box-main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 70px;
+  border-bottom: 1px solid $hhfeGrey;
+  h2, h3 {
+    margin-left: 20px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 12px;
+    color: darken($hhfeGrey, 20%);
+  }
+}
+
+.hhfe-box-main-context {
+  flex: 0 0 450px;
+  border-bottom: 1px solid $hhfeGrey;
+  padding: 10px;
+  box-sizing: border-box;
+  .context {
+    width: 60%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    .avatar {
+      float: left;
+      height: 40px;
+      width: 40px;
+      border: 1px solid $hhfeGrey;
+    }
+    .name {
+      float: left;
+      margin: 5px 0 5px 15px;
+      font-size: 12px;
+      color: darken($hhfeGrey,20%);
+    }
+    .content {
+      float: left;
+      max-width: 315px;
+      margin-top: 25px;
+      margin-left: -25px;
+      font-size: 14px;
+      padding: 10px;
+      line-height: 1.3;
+      border-radius: $radius;
+      background-color: rgb(212, 237, 244);
+    }
+  }
+}
+
+.hhfe-box-main-sender {
+  flex: 1;
+  header {
+    height: 30px;
+  }
+  textarea {
+    width: 100%;
+    height: 145px;
+    padding: 5px;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    border: none;
+  }
+}
+
+
+
