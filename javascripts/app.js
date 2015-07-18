@@ -38,13 +38,13 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     id: 3,
     name: 'DIYgod',
     sex: '男',
-    profession: '前端工程师',
-    age: 22,
-    subInfo: '这家伙很懒，什么也没有留下',
-    github: 'http://www.google.com',
-    weibo: 'http://www.google.com',
-    blog: 'http://www.google.com',
-    avatar: 'http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg'
+    profession: '前端攻城狮',
+    age: 20,
+    subInfo: 'Write the Code. Change the World.',
+    github: 'https://github.com/DIYgod',
+    weibo: 'http://weibo.com/anotherhome',
+    blog: 'https://www.anotherhome.net/',
+    avatar: 'http://ww1.sinaimg.cn/mw690/c51bcf6bgw1eu79xqwalzg208c08cmzh.gif'
   }, {
     id: 4,
     name: 'zchen9',
