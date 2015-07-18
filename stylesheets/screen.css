@@ -160,12 +160,12 @@ body {
   width: 65px;
   justify-content: space-around;
   align-items: center;
-  height: 25px;
+  height: 28px;
 }
 /* line 93, ../sass/screen.scss */
 .hhfe-box-sidebar-header div {
-  height: 12px;
-  width: 12px;
+  height: 11px;
+  width: 11px;
   border-radius: 50%;
 }
 /* line 98, ../sass/screen.scss */
