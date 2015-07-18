@@ -69,15 +69,15 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     avatar: 'http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg'
   }, {
     id: 6,
-    name: 'DIYgod',
+    name: 'Aralic',
     sex: '男',
     profession: '前端工程师',
     age: 22,
-    subInfo: '这家伙很懒，什么也没有留下',
-    github: 'http://www.google.com',
-    weibo: 'http://www.google.com',
-    blog: 'http://www.google.com',
-    avatar: 'http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg'
+    subInfo: '啦啦啦，天气真好！',
+    github: 'https://github.com/Aralic',
+    weibo: 'http://weibo.com/u/3059735367',
+    blog: 'http://aralic.github.io/',
+    avatar: 'http://i.imgur.com/14UphQ7.png'
   }];
 
   $scope.currentMember = {
