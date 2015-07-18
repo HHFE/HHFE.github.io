@@ -10,19 +10,19 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     isHHFE: true,
     name: 'HHFE',
     subInfo: 'HHFE',
-    github: 'http://www.google.com',
-    avatar: 'http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg'
+    github: 'https://github.com/HHFE',
+    avatar: 'https://dn-diygod.qbox.me/HFE.png'
   }, {
     id: 1,
-    name: 'DIYgod',
+    name: '面汤',
     sex: '男',
     profession: '前端工程师',
     age: 22,
-    subInfo: '这家伙很懒，什么也没有留下',
-    github: 'http://www.google.com',
-    weibo: 'http://www.google.com',
-    blog: 'http://www.google.com',
-    avatar: 'http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg'
+    subInfo: '爱好动漫,热爱技术与艺术的结合,钻研物联网/前端',
+    github: 'https://github.com/Miantang',
+    weibo: 'http://weibo.com/mt233',
+    blog: 'http://ppii.in',
+    avatar: 'http://pic3.zhimg.com/00cc87c6997dcbca44e2966953f6b32a_l.jpg'
   }, {
     id: 2,
     name: 'horizon0514',
@@ -31,9 +31,9 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     age: 25,
     subInfo: '上善若水，水善利万物而不争',
     github: 'http://github.com/horizon0514',
-    weibo: 'http://weibo/horizon0514',
+    weibo: 'http://weibo.com/horizon0514',
     blog: 'http://www.huangsy.me',
-    avatar: 'http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg'
+    avatar: 'http://tp2.sinaimg.cn/1908621157/180/5674005397/1'
   }, {
     id: 3,
     name: 'DIYgod',
