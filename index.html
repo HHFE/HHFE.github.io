@@ -29,9 +29,9 @@
   </div>
   <div class="hhfe-box-main">
     <div class="hhfe-box-main-header">
-      <h2>{{currentMember.name}}</h2>
+      <h2 ng-bind="currentMember.name"></h2>
 
-      <h3>{{currentMember.subInfo}}</h3>
+      <h3 ng-bind="currentMember.subInfo"></h3>
 
       <div class="social">
         <a class="fa fa-weibo" target="_blank" ng-href="{{currentMember.weibo}}"></a>
