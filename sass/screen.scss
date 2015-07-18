@@ -34,6 +34,10 @@ body {
 
 .hhfe-box {
   clear: both;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   width: 1000px;
   height: 650px;
@@ -51,6 +55,10 @@ body {
 }
 
 .hhfe-box-sidebar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   flex: 0 0 70px;
@@ -84,6 +92,10 @@ body {
 }
 
 .hhfe-box-sidebar-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   margin: 0 auto;
   width: 65px;
@@ -110,6 +122,10 @@ body {
 }
 
 .hhfe-box-select {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   flex: 0 0 250px;
@@ -119,6 +135,10 @@ body {
   background-color: lighten($hhfeGrey, 10%);
   ul {
     li {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       align-items: center;
       padding-left: 20px;
@@ -143,6 +163,10 @@ body {
 }
 
 .hhfe-box-select-finder {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,6 +186,10 @@ body {
 }
 
 .hhfe-box-main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -174,6 +202,10 @@ body {
 
 .hhfe-box-main-header {
   position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,6 +273,10 @@ body {
 .hhfe-box-main-sender {
   flex: 1;
   header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     height: 30px;

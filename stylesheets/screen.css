@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -99,6 +99,10 @@ body {
 /* line 35, ../sass/screen.scss */
 .hhfe-box {
   clear: both;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   width: 1000px;
   height: 650px;
@@ -108,7 +112,7 @@ body {
   margin: 10px auto;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .avatar {
   width: 45px;
   height: 45px;
@@ -116,8 +120,12 @@ body {
   box-sizing: border-box;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .hhfe-box-sidebar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   flex: 0 0 70px;
@@ -125,12 +133,12 @@ body {
   background: #2abae3;
   border-radius: 6px 0 0 6px;
 }
-/* line 60, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .hhfe-box-sidebar .avatar {
   margin: 20px auto;
   border: 1px solid #bababa;
 }
-/* line 64, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .hhfe-box-sidebar .group {
   position: relative;
   display: block;
@@ -138,7 +146,7 @@ body {
   color: #ffffff;
   font-size: 25px;
 }
-/* line 70, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .hhfe-box-sidebar .group span {
   position: absolute;
   display: inline-block;
@@ -153,8 +161,12 @@ body {
   border-radius: 50%;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .hhfe-box-sidebar-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   margin: 0 auto;
   width: 65px;
@@ -162,30 +174,34 @@ body {
   align-items: center;
   height: 28px;
 }
-/* line 93, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .hhfe-box-sidebar-header div {
   height: 11px;
   width: 11px;
   border-radius: 50%;
 }
-/* line 98, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .hhfe-box-sidebar-header div:nth-child(1) {
   background-color: #fc625d;
   border: 1px solid #de4643;
 }
-/* line 102, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .hhfe-box-sidebar-header div:nth-child(2) {
   background-color: #fdc141;
   border: 1px solid #dd9e33;
 }
-/* line 106, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .hhfe-box-sidebar-header div:nth-child(3) {
   background-color: #33c748;
   border: 1px solid #18a735;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .hhfe-box-select {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   flex: 0 0 250px;
@@ -194,8 +210,12 @@ body {
   border-bottom: 1px solid #e0e0e0;
   background-color: #fafafa;
 }
-/* line 121, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .hhfe-box-select ul li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   padding-left: 20px;
@@ -203,33 +223,37 @@ body {
   height: 70px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 128, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .hhfe-box-select ul li:hover {
   background-color: #ededed;
   cursor: pointer;
 }
-/* line 132, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .hhfe-box-select ul li.checked {
   background-color: #ededed;
 }
-/* line 135, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .hhfe-box-select ul li .avatar {
   border: 1px solid lightgray;
 }
-/* line 138, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .hhfe-box-select ul li span {
   margin-left: 20px;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .hhfe-box-select-finder {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 0 0 70px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 151, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .hhfe-box-select-finder input {
   padding: 5px;
   box-sizing: border-box;
@@ -242,8 +266,12 @@ body {
   background-color: #e0e0e0;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .hhfe-box-main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -254,42 +282,46 @@ body {
   background-color: white;
 }
 
-/* line 175, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .hhfe-box-main-header {
   position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 0 0 70px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 182, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .hhfe-box-main-header h2, .hhfe-box-main-header h3 {
   margin-left: 20px;
 }
-/* line 185, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .hhfe-box-main-header h2 {
   margin-bottom: 10px;
 }
-/* line 188, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .hhfe-box-main-header h3 {
   font-size: 12px;
   color: #adadad;
 }
-/* line 192, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .hhfe-box-main-header .social {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 196, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .hhfe-box-main-header .social a {
   font-size: 30px;
   color: #2abae3;
   margin-left: 15px;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .hhfe-box-main-context {
   flex: 0 0 400px;
   border-bottom: 1px solid #e0e0e0;
@@ -297,20 +329,20 @@ body {
   box-sizing: border-box;
   overflow-y: scroll;
 }
-/* line 210, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .hhfe-box-main-context .context {
   width: 60%;
   margin-bottom: 10px;
   overflow: hidden;
 }
-/* line 214, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .hhfe-box-main-context .context .avatar {
   float: left;
   height: 40px;
   width: 40px;
   border: 1px solid #e0e0e0;
 }
-/* line 220, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .hhfe-box-main-context .context .name {
   float: left;
   margin: 5px 0 5px 15px;
@@ -318,7 +350,7 @@ body {
   width: 50px;
   color: #adadad;
 }
-/* line 227, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .hhfe-box-main-context .context .content {
   float: left;
   max-width: 315px;
@@ -331,12 +363,16 @@ body {
   background-color: #d4edf4;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .hhfe-box-main-sender {
   flex: 1;
 }
-/* line 243, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .hhfe-box-main-sender header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   height: 30px;
@@ -344,11 +380,11 @@ body {
   padding-left: 15px;
   color: #a0a0a0;
 }
-/* line 250, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .hhfe-box-main-sender header i {
   margin-right: 20px;
 }
-/* line 254, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 .hhfe-box-main-sender textarea {
   width: 100%;
   height: 145px;
