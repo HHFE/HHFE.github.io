@@ -18,24 +18,29 @@ html {
   height: 100%;
 }
 
-body {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
 }
 
+body {
+  height: 100%;
+}
+
+.floater {
+  float: left;
+  height: 50%;
+  margin-bottom: -325px;
+}
+
 .hhfe-box {
+  clear: both;
   display: flex;
   width: 1000px;
   height: 650px;
   box-sizing: border-box;
   border-radius: $radius;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
+  margin: 0 auto;
 }
 
 .avatar {
