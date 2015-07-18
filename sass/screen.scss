@@ -14,21 +14,25 @@ html {
   height: 100%;
 }
 
-html,
-body {
+html {
   height: 100%;
 }
 
 body {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .hhfe-box {
   display: flex;
   width: 1000px;
-  height: 700px;
+  height: 650px;
   box-sizing: border-box;
   border-radius: $radius;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
@@ -51,6 +55,26 @@ body {
   .avatar {
     margin: 20px auto;
     border: 1px solid darken($hhfeGrey, 15%);
+  }
+  .group {
+    position: relative;
+    display: block;
+    margin: 35px auto 0 auto;
+    color: #ffffff;
+    font-size: 25px;
+    span {
+      position: absolute;
+      display: inline-block;
+      top: -10px;
+      right: -10px;
+      font-size: 12px;
+      background-color: red;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -94,6 +118,10 @@ body {
       box-sizing: border-box;
       height: 70px;
       border-bottom: 1px solid $hhfeGrey;
+      &:hover {
+        background-color: lighten($hhfeGrey, 5%);
+        cursor: pointer;
+      }
       .avatar {
         border: 1px solid darken($hhfeGrey, 5%);
       }
@@ -135,6 +163,7 @@ body {
 }
 
 .hhfe-box-main-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,13 +179,24 @@ body {
     font-size: 12px;
     color: darken($hhfeGrey, 20%);
   }
+  .social {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    a {
+      font-size: 30px;
+      color: $coolBlue;
+      margin-left: 15px;
+    }
+  }
 }
 
 .hhfe-box-main-context {
-  flex: 0 0 450px;
+  flex: 0 0 400px;
   border-bottom: 1px solid $hhfeGrey;
   padding: 10px;
   box-sizing: border-box;
+  overflow-y: scroll;
   .context {
     width: 60%;
     margin-bottom: 10px;
@@ -171,16 +211,17 @@ body {
       float: left;
       margin: 5px 0 5px 15px;
       font-size: 12px;
+      width: 50px;
       color: darken($hhfeGrey,20%);
     }
     .content {
       float: left;
       max-width: 315px;
       margin-top: 25px;
-      margin-left: -25px;
+      margin-left: -55px;
       font-size: 14px;
       padding: 10px;
-      line-height: 1.3;
+      line-height: 1.4;
       border-radius: $radius;
       background-color: rgb(212, 237, 244);
     }
@@ -190,7 +231,15 @@ body {
 .hhfe-box-main-sender {
   flex: 1;
   header {
+    display: flex;
+    align-items: center;
     height: 30px;
+    font-size: 18px;
+    padding-left: 15px;
+    color: darken($hhfeGrey,25%);
+    i {
+      margin-right: 20px;
+    }
   }
   textarea {
     width: 100%;

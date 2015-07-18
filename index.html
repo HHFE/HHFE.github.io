@@ -5,9 +5,11 @@
   <title>HHFE</title>
   <link rel="stylesheet" href="stylesheets/screen.css"/>
   <link rel="stylesheet" href="stylesheets/font-awesome.css"/>
+  <script src="lib/js/angular.min.js"></script>
+  <script src="javascripts/app.js"></script>
 </head>
-<body>
-<div class="hhfe-box">
+<body ng-app="app">
+<div class="hhfe-box" ng-controller="MainController">
   <div class="hhfe-box-sidebar">
     <div class="hhfe-box-sidebar-header">
       <div></div>
@@ -15,26 +17,15 @@
       <div></div>
     </div>
     <img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg" alt=""/>
+    <i class="fa fa-users group"><span>6</span></i>
   </div>
   <div class="hhfe-box-select">
     <div class="hhfe-box-select-finder">
       <input type="text"/>
     </div>
     <ul>
-      <li><img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
-               alt=""/><span>HHFE</span></li>
-      <li><img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
-               alt=""/><span>名字</span></li>
-      <li><img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
-               alt=""/><span>名字</span></li>
-      <li><img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
-               alt=""/><span>名字</span></li>
-      <li><img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
-               alt=""/><span>名字</span></li>
-      <li><img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
-               alt=""/><span>名字</span></li>
-      <li><img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
-               alt=""/><span>名字</span></li>
+      <li ng-repeat="member in members" ng-click="changeCurrentMemberById($event)"><img class="avatar" ng-src="{{member.avatar}}"
+                                             alt=""/><span ng-bind="member.name"></span></li>
     </ul>
   </div>
   <div class="hhfe-box-main">
@@ -42,26 +33,59 @@
       <h2>HHFE</h2>
 
       <h3>这家伙很懒，什么都没有留下</h3>
+
+      <div class="social">
+        <a class="fa fa-weibo" ng-href="{{currentMember.weibo}}"></a>
+        <a class="fa fa-github" ng-href="{{currentMember.github}}"></a>
+        <a class="fa fa-globe" ng-href="{{currentMember.blog}}"></a>
+      </div>
     </div>
     <div class="hhfe-box-main-context">
+      <!-- 名字 -->
       <div class="context">
-        <img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
+        <img class="avatar" ng-src="{{currentMember.avatar}}"
              alt=""/>
-        <span class="name">名字</span>
-        <div class="content">这家伙很懒，什么也没有留下</div>
+        <span class="name" ng-bind="currentMember.name"></span>
+
+        <div class="content" ng-bind="'我是' + currentMember.name"></div>
       </div>
-      <div class="context">
-        <img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg"
+      <!-- 年龄 -->
+      <div class="context" ng-hide="currentMember.isHHFE">
+        <img class="avatar" ng-src="{{currentMember.avatar}}"
              alt=""/>
-        <span class="name">名字</span>
-        <div class="content">这家伙很懒，什么也没有留下这家伙很懒这家伙很懒，什么也没有留下这家伙很懒这家伙很懒，什么也没有留下这家伙很懒这家伙很懒，什么也没有留下这家伙很懒这家伙很懒，什么也没有留下这家伙很懒</div>
+        <span class="name" ng-bind="currentMember.name"></span>
+
+        <div class="content" ng-bind="'我' + currentMember.age + '岁'"></div>
+      </div>
+      <!-- 职业 -->
+      <div class="context" ng-hide="currentMember.isHHFE">
+        <img class="avatar" ng-src="{{currentMember.avatar}}"
+             alt=""/>
+        <span class="name" ng-bind="currentMember.name"></span>
+
+        <div class="content" ng-bind="'我是' + currentMember.profession"></div>
+      </div>
+      <!-- 简介 -->
+      <div class="context">
+        <img class="avatar" ng-src="{{currentMember.avatar}}"
+             alt=""/>
+        <span class="name" ng-bind="currentMember.name"></span>
+
+        <div class="content" ng-bind="currentMember.subInfo"></div>
       </div>
     </div>
     <div class="hhfe-box-main-sender">
-      <header></header>
+      <header>
+        <i class="fa fa-smile-o"></i>
+        <i class="fa fa-scissors"></i>
+        <i class="fa fa-picture-o"></i>
+        <i class="fa fa-clock-o"></i>
+        <i class="fa fa-file-text-o"></i>
+      </header>
       <textarea></textarea>
     </div>
   </div>
 </div>
+
 </body>
 </html>
