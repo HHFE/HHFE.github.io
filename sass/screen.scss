@@ -40,7 +40,7 @@ body {
   box-sizing: border-box;
   border-radius: $radius;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, .5);
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .avatar {
@@ -93,17 +93,19 @@ body {
   div {
     height: 12px;
     width: 12px;
-    border: 1px solid darken($hhfeGrey, 25%);
     border-radius: 50%;
   }
   div:nth-child(1) {
     background-color: rgb(252, 98, 93);
+    border: 1px solid rgb(222, 70, 67);
   }
   div:nth-child(2) {
     background-color: rgb(253, 193, 65);
+    border: 1px solid rgb(221, 158, 51);
   }
   div:nth-child(3) {
     background-color: rgb(51, 199, 72);
+    border: 1px solid rgb(24, 167, 53);
   }
 }
 
