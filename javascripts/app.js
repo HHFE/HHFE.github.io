@@ -9,7 +9,7 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     id: 0,
     isHHFE: true,
     name: 'HHFE',
-    subInfo: 'HHFE',
+    subInfo: 'HHFE is good!!',
     github: 'https://github.com/HHFE',
     avatar: 'https://dn-diygod.qbox.me/HFE.png'
   }, {
@@ -22,7 +22,7 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     github: 'https://github.com/Miantang',
     weibo: 'http://weibo.com/mt233',
     blog: 'http://ppii.in',
-    avatar: 'http://pic3.zhimg.com/00cc87c6997dcbca44e2966953f6b32a_l.jpg'
+    avatar: 'http://tp3.sinaimg.cn/1782564470/180/22908095577/1'
   }, {
     id: 2,
     name: 'horizon0514',

@@ -15,7 +15,7 @@
       <div></div>
       <div></div>
     </div>
-    <img class="avatar" src="http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg" alt=""/>
+    <img class="avatar" src="https://avatars2.githubusercontent.com/u/13134860?v=3&s=84" alt=""/>
     <i class="fa fa-users group"><span>6</span></i>
   </div>
   <div class="hhfe-box-select">
@@ -23,15 +23,15 @@
       <input type="text"/>
     </div>
     <ul>
-      <li ng-repeat="member in members" ng-click="changeCurrentMemberById($event)"><img class="avatar" ng-src="{{member.avatar}}"
+      <li ng-repeat="member in members" ng-class="{checked: currentMember.id === member.id}" ng-click="changeCurrentMemberById($event)"><img class="avatar" ng-src="{{member.avatar}}"
                                              alt=""/><span ng-bind="member.name"></span></li>
     </ul>
   </div>
   <div class="hhfe-box-main">
     <div class="hhfe-box-main-header">
-      <h2>HHFE</h2>
+      <h2>{{currentMember.name}}</h2>
 
-      <h3>这家伙很懒，什么都没有留下</h3>
+      <h3>{{currentMember.subInfo}}</h3>
 
       <div class="social">
         <a class="fa fa-weibo" target="_blank" ng-href="{{currentMember.weibo}}"></a>
@@ -55,6 +55,14 @@
         <span class="name" ng-bind="currentMember.name"></span>
 
         <div class="content" ng-bind="'我' + currentMember.age + '岁'"></div>
+      </div>
+      <!-- 性别 -->
+      <div class="context" ng-hide="currentMember.isHHFE">
+        <img class="avatar" ng-src="{{currentMember.avatar}}"
+             alt=""/>
+        <span class="name" ng-bind="currentMember.name"></span>
+
+        <div class="content" ng-bind="currentMember.sex"></div>
       </div>
       <!-- 职业 -->
       <div class="context" ng-hide="currentMember.isHHFE">

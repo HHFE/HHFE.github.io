@@ -129,6 +129,9 @@ body {
         background-color: lighten($hhfeGrey, 5%);
         cursor: pointer;
       }
+      &.checked {
+        background-color: lighten($hhfeGrey, 5%);
+      }
       .avatar {
         border: 1px solid darken($hhfeGrey, 5%);
       }
