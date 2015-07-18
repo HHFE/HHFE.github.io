@@ -84,9 +84,9 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     isHHFE: true,
     id: 0,
     name: 'HHFE',
-    subInfo: '这家伙很懒，什么也没有留下',
-    github: 'http://www.google.com',
-    avatar: 'http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg'
+    subInfo: 'HHFE is good!!',
+    github: 'https://github.com/HHFE',
+    avatar: 'https://dn-diygod.qbox.me/HFE.png'
   };
 
   $scope.changeCurrentMemberById = function ($event) {
