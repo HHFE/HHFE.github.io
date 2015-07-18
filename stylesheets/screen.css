@@ -75,29 +75,34 @@ html {
 }
 
 /* line 17, ../sass/screen.scss */
-html,
-body {
+html {
   height: 100%;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 body {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* line 28, ../sass/screen.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, ../sass/screen.scss */
 .hhfe-box {
   display: flex;
   width: 1000px;
-  height: 700px;
+  height: 650px;
   box-sizing: border-box;
   border-radius: 6px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .avatar {
   width: 45px;
   height: 45px;
@@ -105,7 +110,7 @@ body {
   box-sizing: border-box;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .hhfe-box-sidebar {
   display: flex;
   flex-direction: column;
@@ -114,13 +119,35 @@ body {
   background: #2abae3;
   border-radius: 6px 0 0 6px;
 }
-/* line 51, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .hhfe-box-sidebar .avatar {
   margin: 20px auto;
   border: 1px solid #bababa;
 }
+/* line 59, ../sass/screen.scss */
+.hhfe-box-sidebar .group {
+  position: relative;
+  display: block;
+  margin: 35px auto 0 auto;
+  color: #ffffff;
+  font-size: 25px;
+}
+/* line 65, ../sass/screen.scss */
+.hhfe-box-sidebar .group span {
+  position: absolute;
+  display: inline-block;
+  top: -10px;
+  right: -10px;
+  font-size: 12px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+}
 
-/* line 57, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .hhfe-box-sidebar-header {
   display: flex;
   margin: 0 auto;
@@ -129,27 +156,27 @@ body {
   align-items: center;
   height: 25px;
 }
-/* line 64, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .hhfe-box-sidebar-header div {
   height: 12px;
   width: 12px;
   border: 1px solid #a0a0a0;
   border-radius: 50%;
 }
-/* line 70, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .hhfe-box-sidebar-header div:nth-child(1) {
   background-color: #fc625d;
 }
-/* line 73, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .hhfe-box-sidebar-header div:nth-child(2) {
   background-color: #fdc141;
 }
-/* line 76, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .hhfe-box-sidebar-header div:nth-child(3) {
   background-color: #33c748;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .hhfe-box-select {
   display: flex;
   flex-direction: column;
@@ -159,7 +186,7 @@ body {
   border-bottom: 1px solid #e0e0e0;
   background-color: #fafafa;
 }
-/* line 90, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .hhfe-box-select ul li {
   display: flex;
   align-items: center;
@@ -168,16 +195,21 @@ body {
   height: 70px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 97, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
+.hhfe-box-select ul li:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+/* line 125, ../sass/screen.scss */
 .hhfe-box-select ul li .avatar {
   border: 1px solid lightgray;
 }
-/* line 100, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .hhfe-box-select ul li span {
   margin-left: 20px;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .hhfe-box-select-finder {
   display: flex;
   justify-content: center;
@@ -185,7 +217,7 @@ body {
   flex: 0 0 70px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 113, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .hhfe-box-select-finder input {
   padding: 5px;
   box-sizing: border-box;
@@ -198,7 +230,7 @@ body {
   background-color: #e0e0e0;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .hhfe-box-main {
   display: flex;
   flex: 1;
@@ -210,77 +242,101 @@ body {
   background-color: white;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .hhfe-box-main-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 0 0 70px;
   border-bottom: 1px solid #e0e0e0;
 }
-/* line 143, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .hhfe-box-main-header h2, .hhfe-box-main-header h3 {
   margin-left: 20px;
 }
-/* line 146, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .hhfe-box-main-header h2 {
   margin-bottom: 10px;
 }
-/* line 149, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .hhfe-box-main-header h3 {
   font-size: 12px;
   color: #adadad;
 }
+/* line 182, ../sass/screen.scss */
+.hhfe-box-main-header .social {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* line 186, ../sass/screen.scss */
+.hhfe-box-main-header .social a {
+  font-size: 30px;
+  color: #2abae3;
+  margin-left: 15px;
+}
 
-/* line 155, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .hhfe-box-main-context {
-  flex: 0 0 450px;
+  flex: 0 0 400px;
   border-bottom: 1px solid #e0e0e0;
   padding: 10px;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
-/* line 160, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .hhfe-box-main-context .context {
   width: 60%;
   margin-bottom: 10px;
   overflow: hidden;
 }
-/* line 164, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .hhfe-box-main-context .context .avatar {
   float: left;
   height: 40px;
   width: 40px;
   border: 1px solid #e0e0e0;
 }
-/* line 170, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .hhfe-box-main-context .context .name {
   float: left;
   margin: 5px 0 5px 15px;
   font-size: 12px;
+  width: 50px;
   color: #adadad;
 }
-/* line 176, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .hhfe-box-main-context .context .content {
   float: left;
   max-width: 315px;
   margin-top: 25px;
-  margin-left: -25px;
+  margin-left: -55px;
   font-size: 14px;
   padding: 10px;
-  line-height: 1.3;
+  line-height: 1.4;
   border-radius: 6px;
   background-color: #d4edf4;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .hhfe-box-main-sender {
   flex: 1;
 }
-/* line 192, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .hhfe-box-main-sender header {
+  display: flex;
+  align-items: center;
   height: 30px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #a0a0a0;
 }
-/* line 195, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
+.hhfe-box-main-sender header i {
+  margin-right: 20px;
+}
+/* line 244, ../sass/screen.scss */
 .hhfe-box-main-sender textarea {
   width: 100%;
   height: 145px;

@@ -1,0 +1,19 @@
+{
+  "name": "hhfe",
+  "version": "1.0.0",
+  "description": "our gh-pages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lishengzxc/HHFE.github.io.git"
+  },
+  "author": "HHFE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lishengzxc/HHFE.github.io/issues"
+  },
+  "homepage": "https://github.com/lishengzxc/HHFE.github.io#readme"
+}
