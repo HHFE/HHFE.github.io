@@ -62,10 +62,10 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     sex: '男',
     profession: '前端工程师',
     age: 22,
-    subInfo: '这家伙很懒，什么也没有留下',
-    github: 'http://www.google.com',
-    weibo: 'http://www.google.com',
-    blog: 'http://www.google.com',
+    subInfo: '这家伙很懒，什么也没有留下(这个真是我的简介~)',
+    github: 'https://github.com/lishengzxc',
+    weibo: 'http://weibo.com/lslisheng/',
+    blog: 'http://www.lishengcn.cn',
     avatar: 'http://ww1.sinaimg.cn/mw690/569c32c8gw1ek3x8vdz44j205k05kq3a.jpg'
   }, {
     id: 6,
