@@ -9,7 +9,7 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     id: 0,
     isHHFE: true,
     name: 'HHFE',
-    subInfo: 'HHFE is good!!',
+    subInfo: 'Happy Hacking!',
     github: 'https://github.com/HHFE',
     avatar: 'http://7xkhbo.com1.z0.glb.clouddn.com/HHFE_up.png'
   }, {
@@ -84,7 +84,7 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     isHHFE: true,
     id: 0,
     name: 'HHFE',
-    subInfo: 'HHFE is good!!',
+    subInfo: 'Happy Hacking!',
     github: 'https://github.com/HHFE',
     avatar: 'http://7xkhbo.com1.z0.glb.clouddn.com/HHFE_up.png'
   };
