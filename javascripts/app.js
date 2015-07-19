@@ -11,7 +11,7 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     name: 'HHFE',
     subInfo: 'HHFE is good!!',
     github: 'https://github.com/HHFE',
-    avatar: 'https://dn-diygod.qbox.me/HFE.png'
+    avatar: 'http://7xkhbo.com1.z0.glb.clouddn.com/HHFE.png'
   }, {
     id: 1,
     name: '面汤',
@@ -86,7 +86,7 @@ hhfe.controller('MainController', ['$scope', function ($scope) {
     name: 'HHFE',
     subInfo: 'HHFE is good!!',
     github: 'https://github.com/HHFE',
-    avatar: 'https://dn-diygod.qbox.me/HFE.png'
+    avatar: 'http://7xkhbo.com1.z0.glb.clouddn.com/HHFE.png'
   };
 
   $scope.changeCurrentMemberById = function ($event) {
