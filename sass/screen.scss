@@ -11,19 +11,23 @@ $hhfeGrey: rgb(224, 224, 224);
 html {
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, '微软雅黑', Arial, sans-serif;
   font-size: 16px;
-  height: 100%;
-}
-
-html {
-  height: 100%;
 }
 
 a {
   text-decoration: none;
 }
 
+@media (min-height: 670px) {
+  body {
+    height: 100%;
+  }
+
+  html {
+    height: 100%;
+  }
+}
+
 body {
-  height: 100%;
   background: linear-gradient(top, #99DDC3, $coolBlue);
   background: -moz-linear-gradient(top, #99DDC3, $coolBlue);
 }
